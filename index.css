@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body.dark-mode {
+    background-color: #1e2139;
+    color: #ffffff;
+  }
+  
+  body.dark-mode .box,
+  body.dark-mode .dropdown,
+  body.dark-mode #invoice_form {
+    background-color: #252945;
+    color: #ffffff;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: row;
+    gap: 170px;
+    background-color: #f8f8fb;
+    font-family: __League_Spartan_b661ba, __League_Spartan_Fallback_b661ba,
+      sans-serif;
+  }
+  .left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 160px;
+    height: 100vh;
+    background-color: #373b53;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .img-logo {
+    background-color: #7c5dfa;
+    padding: 60px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  .logo {
+    height: 68vh;
+  }
+  .moon-icon {
+    height: 10vh;
+    color: #7e88c3;
+  }
+  .profile-pic {
+    margin-top: 45px;
+  }
+  hr {
+    width: 160px;
+  }
+  .right {
+    width: 58%;
+    margin-left: 320px;
+  }
+  .top {
+    margin-top: 22vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  h1 {
+    color: black;
+    font-size: 40px;
+  }
+  p {
+    color: #889bbd;
+  }
+  .bi-caret-down-fill {
+    color: #7c5dfa;
+  }
+  .btn-primary {
+    background-color: #7c5dfa;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 14px;
+    border: none;
+  }
+  
+  .delete-btn button{
+    background-color: #ec5757;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 50px;
+    font-size: 12px;
+    border: none;
+  }
+  .filter-invoice {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .centered-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .invoice-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .box {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    justify-content: space-between;
+    padding: 25px;
+  }
+  .box-left {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .box-right {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  .status {
+    background-color: #eafbf5;
+    padding: 14px 26px;
+    color: #33d69f;
+  }
+  .status-pending {
+    background-color: #fff4e5;
+    padding: 8px 8px;
+  }
+  .bi-circle-fill {
+    color: #33d69f;
+  }
+  .bi-circle-fills {
+    color: #ff9412;
+  }
+  .modal {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    padding-left: 140px;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+  }
+  #invoice_form {
+    background-color: #fff;
+    padding: 40px 60px;
+    width: 70%;
+    max-width: 950px;
+    overflow-y: auto;
+  }
+  .new-invoice {
+    margin-bottom: 36px;
+    font-size: 22px;
+  }
+  .bill {
+    color: #7c5dfa;
+    margin-bottom: 34px;
+    font-size: 14px;
+  }
+  .street-address {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .label-primary {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #889bbd;
+  }
+  .input-primary {
+    height: 45px;
+    width: 100%;
+    border: 1px solid #e3e6fb;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+  .city-postcode-country {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2px;
+    margin-bottom: 30px;
+  }
+  .city_postcode_country {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 270px;
+  }
+  .input-secondary {
+    height: 45px;
+    width: 100%;
+    border: 1px solid #e3e6fb;
+  }
+  .label-secondary {
+    font-size: 14px;
+    color: #889bbd;
+  }
+  .payment-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2px;
+    margin-bottom: 30px;
+  }
+  .client-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .new-item-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .invoice-payment {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 410px;
+  }
+  .input-tertiary {
+    height: 45px;
+    padding: 15px;
+    width: 97%;
+    border: 1px solid #e3e6fb;
+  }
+  .project_description {
+    margin-bottom: 70px;
+  }
+  .item-list {
+    margin-bottom: 50px;
+    font-size: 16px;
+    color: #889ac8;
+  }
+  .btn-secondary {
+    background-color: #f8f8fb;
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #889ac8;
+    width: 100%;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 20px;
+  }
+  .new-item {
+    width: 90%;
+  }
+  .new-item-details {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .input-four {
+    height: 40px;
+    border: 1px solid #e3e6fb;
+    width: 220px;
+  }
+  .input-five {
+    height: 40px;
+    border: 1px solid #e3e6fb;
+    width: 165px;
+  }
+  .bi-trash3 {
+    color: black;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+  .discard-save {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .btn-discard {
+    padding: 15px 25px;
+    background-color: #f8f8fb;
+    border: none;
+    border-radius: 20px;
+    color: #889ac8;
+  }
+  .btn-discard:hover {
+    background-color: black;
+  }
+  .draft-send {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .btn-tertiary {
+    padding: 15px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+  }
+  .btn-draft {
+    background-color: #1e2139;
+    color: #888eb0;
+  }
+  .btn-send {
+    background-color: #7c5dfa;
+    color: #ffffff;
+  }
+  .dropdown {
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .dropdown-content {
+    border-radius: 20px;
+    padding: 4px 2px;
+    color: black;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .dropdown-li {
+    margin-right: 10px;
+  }
+  .filter-ul {
+    position: relative;
+    display: inline-block;
+  }
+  .filter {
+    cursor: pointer;
+  }
+  .dropdown {
+    position: absolute;
+    box-shadow: #1e2139 0px 0px 10px 0px;
+    top: 35px;
+    left: -50px;
+    z-index: 1000;
+    background-color: #fff;
+    display: none;
+  }
+  .items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .delete-item-btn {
+    margin-top: 30px;
+  }
